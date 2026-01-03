@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "FastPost",
+    "slug": "fastpost-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.sardarwalee.fastpost",
+      "deploymentTarget": "14.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to capture photos",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access",
+        "NSPhotoLibraryAddUsageDescription": "This app needs to save photos"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sardarwalee.fastpost",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "scheme": "fastpost",
+    "extra": {
+      "eas": {
+        "projectId": "fastpost-project-id"
+      }
+    }
+  }
+}
